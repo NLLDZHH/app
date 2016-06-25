@@ -1,8 +1,13 @@
 package com.app.controllers;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.app.exceptionofmysql.GetConnectionSqlServer;
+import com.app.service.NewsService;
 /**
  * Created with IntelliJ IDEA.
  * User: xvitcoder
@@ -12,9 +17,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/")
 public class IndexController {
-
+	
     @RequestMapping
     public String getIndexPage() {
-        return "index";
+    	//GetConnectionSqlServer getConn = new GetConnectionSqlServer();  
+       // getConn.getConnectionSqlServer();
+    	
+  
+    	
+    	
+    	return "index";
     }
 }
